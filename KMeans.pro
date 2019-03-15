@@ -41,6 +41,7 @@ FORMS += \
 
 INCLUDEPATH += D:\OpenCv331\install\include\
 D:\OpenCv331\install\include\opencv2\
+E:\QTApp\OpenCVKMean\thridPart\
 
 CONFIG(debug, debug|release){
 LIBS+=D:/OpenCv331/install/x64/vc14/lib/opencv_core331d.lib\
@@ -50,4 +51,5 @@ D:/OpenCv331/install/x64/vc14/lib/opencv_imgcodecs331d.lib\
 D:/OpenCv331/install/x64/vc14/lib/opencv_cudev331d.lib\
 D:/OpenCv331/install/x64/vc14/lib/opencv_cudafilters331d.lib\
 D:/OpenCv331/install/x64/vc14/lib/opencv_cudawarping331d.lib\
+E:/QTApp/OpenCVKMean/thridPart/opencv331Wrap.lib\
 }

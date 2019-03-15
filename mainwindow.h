@@ -16,6 +16,7 @@
 #include <kmean.h>
 #include <QDebug>
 #include <ctime>
+#include "vector"
 
 using namespace cv;
 using namespace std;
@@ -36,10 +37,13 @@ private slots:
     void on_pushButton_clicked();
     void on_pushButton_2_clicked();
 
+
 private:
     void showResultImg(const cv::Mat& labels, const cv::Mat& centers, int height, int width);
     Ui::MainWindow *ui;
     RNG rng;
+
+
 };
 
 #endif // MAINWINDOW_H

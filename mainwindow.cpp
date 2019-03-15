@@ -1,11 +1,14 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "opencv331wrap.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow),rng(12345)
 {
     ui->setupUi(this);
+    Opencv331Wrap a;
+    a.loadImg();
 }
 
 MainWindow::~MainWindow()
@@ -65,6 +68,7 @@ void MainWindow::on_pushButton_clicked()
         circle( img, ipt, 2, colorTab[clusterIdx], FILLED, LINE_AA );
     }
     imshow("clusters", img);
+
 }
 
 void MainWindow::on_pushButton_2_clicked()
